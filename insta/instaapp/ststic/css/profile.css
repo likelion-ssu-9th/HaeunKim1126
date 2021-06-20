@@ -1,0 +1,80 @@
+header {
+    display:flex;
+    flex-direction: row;
+    width: 900px;
+    height: 200px;
+    margin-top: 300px;
+    margin-left: 600px;
+    background-color: white;
+}
+
+header h1{
+    margin: auto;
+    margin-left: 100px;
+    margin-top:-10px;
+}
+
+
+.bt{
+    margin-top:5px;
+    margin-left:20px;
+    height:30px;
+    font-weight: bold;
+}
+
+header ul{
+    margin-top:70px;
+    margin-left:-320px;
+
+}
+header li{
+    list-style: none;
+    float:left;
+    margin:10px;
+    
+}
+
+header p{
+    margin-top:130px;
+    margin-left:-330px;
+}
+
+
+
+
+main{
+    display:flex;
+    width:800px;
+    margin-left:400px;
+    margin-top:100px;
+}
+
+
+main img{
+    width:220px;
+    margin: auto;
+    margin-left: 5rem;
+
+    
+}
+main ul{
+    
+    margin-top:150px;
+    margin-left:-300px;
+}
+.info{
+    position: absolute;
+    visibility: hidden;
+}
+
+main li{
+    
+    float:left;
+    font-weight: bold;
+    list-style:none;
+}
+
+main img:hover .info{
+    visibility: visible;
+    background-color: rgba(0,0,0,0.25);
+}

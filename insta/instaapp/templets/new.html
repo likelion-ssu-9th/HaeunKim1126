@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>upload</title>
+    <link href="{% static 'css/background.css'%}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'css/feed.css'%}" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="{% static 'img/icon.png' %}">
+
+</head>
+<body>
+    <h1>Upload image</h1>
+    <form action="" method="POST">
+        {%csrf_token%}
+        <p>사진 <input type="image" name="image"></p>
+        <button type="submit"> submit</button>
+    </form>
+
+</body>

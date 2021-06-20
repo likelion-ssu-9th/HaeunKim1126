@@ -1,0 +1,71 @@
+.main{
+    background-color: white;
+    width: 20rem;
+    height: 30rem;
+    margin-left:20%;
+    margin-top: 20%;
+
+}
+
+
+.login_container{
+    background-color: white;
+    height: 400px;
+    width: 350px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.instargramText {
+    height: 2rem;
+    width : 5rem;
+    display : block;
+    margin-top: 10rem;
+    margin: auto;
+}
+
+.userLogin {
+    height: 30px;
+    width: 300px;
+    display: block;
+    margin-top: 500px;
+    margin: auto;
+    background-color: whitesmoke;
+}
+
+.button {
+    height: 30px;
+    width: 300px;
+    border: 1px solid #E6E6E6;
+    border-radius: 3px;
+    background-color: rgba(144, 198, 248, 0.5);
+    color:white;
+    margin: auto;
+
+}
+
+body{
+    background-color: rgb(235, 235, 235);
+}
+
+.joinInsta{
+
+    background-color: white;
+        height: 30px;
+        width: 350px;
+        text-align: center;
+        display: block;
+        margin: auto;
+        margin-top: 2rem;
+        text-align: center;
+}
+
+.joinBtn{
+    background-color: white;
+    border:white;
+    color:rgb(82, 160, 228);
+    font-weight: 1000;
+}

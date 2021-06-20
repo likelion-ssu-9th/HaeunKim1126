@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Instargram</title>
+<link href={% static 'css/base.css'%} rel="stylesheet" type="text/css" >
+<link rel="icon" href="{% static 'img/icon.png' %}">
+</head>
+<body>
+    <header>
+        <div class="left_box">
+            <div class="favicon_frame">
+                <a href="{% url 'profile' %}"><img class="faviconFrame" src="{% static 'img/line_favicon.png' %} alt="인스타 로고" /> </a>
+            </div>
+            <div class="line">
+                <img class="logo" src="{% static 'img/logo_text.png' %}" alt="인스타 글씨" />
+            </div>
+        </div>
+        <div class="right box">
+            <div class="heart_box">
+                <img class="heart" src="{% static 'img/liked.png'%}" alt="좋아요" />
+            </div>
+            <div class="myInfo_box">
+                <img class="myInfo" src="{% static 'img/myinfo.png'%}" alt="내 프로필" />
+            </div>
+    </header>
+
+    <div>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'login' %}">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'logout' %}">logout</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'signup' %}">signup</a>
+        </li>
+    </div>
+
+    {% block content %}
+    {% endblock %}
+
+</body> 
+</html>   

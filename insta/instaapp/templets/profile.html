@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+        <meta charset="UTF-8">
+        <title>upload</title>
+        <link href="{% static 'css/background.css'%}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'css/feed.css'%}" rel="stylesheet" type="text/css" />
+        <link rel="icon" href="{% static 'img/icon.png' %}">
+
+    </head>
+
+    <body>
+
+        {{writer.nickName}}의 사진 {% for post in writer_posts %}
+        <div>
+            <p>{{post.writer.nickName}}</p>
+            <p>{{post.pub_date}}</p>
+            <a href="{%url 'detail' post.id%}">
+                <p><img src="{{post.image.url}}" /></p>
+            </a>
+        </div>
+    </body>
+{% endfor %}
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
